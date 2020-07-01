@@ -44,6 +44,9 @@
 			 <li class = "nav-item">
 				  <a class="sb-button" href="https://discordapp.com/oauth2/authorize?=&client_id=647231754851057674&scope=bot&permissions=2146958583" target="_blank">Invite</a>
 			  </li>
+			   <li class="nav-item">
+				<a class="sb-button" href="commissions.html">Commissions</a>
+			 </li>
 		  </ul>
 		</div>
 	</nav>
@@ -111,7 +114,23 @@
 				<h4>Usage</h4>
 				<p class="command-usage">$$sb setstars <span class="arg">count</span></p>
 				<h4>Description</h4>
-				<p class="command-description">Set the required emote reactions to get onto the starboard. Both the NSFW and regular starboard share the same requirement.</p>
+				<p class="command-description">Set the required emote reactions to get onto the starboard.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>
+				<div class="alert alert-danger">
+					<h5 class="command-note-header">Warning</h5>
+					<hr>
+					<p>By default, Discord's message reaction limit per emote is 5000. Make sure your star requirement is not too excessive.</p>
+				</div>
+			</div>
+			
+			<div class="command" id="star-nsfwsetstars">
+				<h3 class="command-header">Starboard NSFW Star Count</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$sb setstars nsfw <span class="arg">count</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Set the required emote reactions to get onto the NSFW starboard.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Channels</p>
 				<div class="alert alert-danger">
