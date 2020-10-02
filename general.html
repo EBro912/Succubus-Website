@@ -33,20 +33,29 @@
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<h4 class="sb-header">Categories</h4>
 					<a class="sb-button sb-button-active" href="general.html">General</a>
-					<a class="sb-button" href="moderation.html">Moderation</a>
-					<a class="sb-button" href="clubs.html">Ping Clubs</a>
+					<a class="sb-button" href="hololive.html">Hololive</a>
+					<a class="sb-button" href="saucenao.html">SauceNAO</a>
 					<a class="sb-button" href="music.html">Music</a>
-					<a class="sb-button" href="starboard.html">Starboard</a>
-					<a class="sb-button" href="reaction.html">Reaction</a>
 					<a class="sb-button" href="donator.html">Donator</a>
-				</div>			
+				</div>
+			 </li>
+			 <li class="nav-item dropdown">
+				<a class="sb-button" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Server Tools
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<h4 class="sb-header">Categories</h4>
+						<a class="sb-button" href="moderation.html">Modding</a>
+						<a class="sb-button" href="logging.html">Logging</a>
+						<a class="sb-button" href="welcome.html">Welcome</a>
+						<a class="sb-button" href="clubs.html">Ping Clubs</a>
+						<a class="sb-button" href="reaction.html">Reaction</a>
+						<a class="sb-button" href="starboard.html">Starboard</a>
+					</div>
 			 </li>
 			 <li class = "nav-item">
 				  <a class="sb-button" href="https://discordapp.com/oauth2/authorize?=&client_id=647231754851057674&scope=bot&permissions=2146958583" target="_blank">Invite</a>
 			  </li>
-			  <li class="nav-item">
-				<a class="sb-button" href="commissions.html">Commissions</a>
-			 </li>
 		  </ul>
 		</div>
 	</nav>
@@ -115,19 +124,6 @@
 				</div>	
 			</div>
 			
-			<div class="command" id="gen-sauce">
-				<h3 class="command-header">SauceNAO</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">$$sauce <span class="arg">[url]</span></p>
-				<h4>Description</h4>
-				<p class="command-description">Search the most recent image or the input <span class="arg">url</span> in the <a href="https://saucenao.com/" target="_blank">SauceNAO</a> database.</p>				
-				<div class="alert alert-danger">
-					<h5 class="command-note-header">Warning</h5>
-					<hr>
-					<p>The bot will only scan for images in the past 20 messages. If there are none, a valid URL (.jpg, .png, or .gif) must be input.</p>
-				</div>	
-			</div>
 			
 			<div class="command" id="gen-bigemote">
 				<h3 class="command-header">Big Emote</h3>
@@ -136,34 +132,6 @@
 				<p class="command-usage">$$bigemote <span class="arg">emote</span></p>
 				<h4>Description</h4>
 				<p class="command-description">View an image version of the input custom emote. Regular emojis do not work.</p>				
-			</div>
-			
-			<div class="command" id="gen-hololive">
-				<h3 class="command-header">Hololive Information</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">$$hololive <span class="arg">[name]</span></p>
-				<h4>Description</h4>
-				<p class="command-description">View livestream information for all of Hololive, or a specific Hololive VTuber if one is input. Alias is $$hl</p>	
-				<div class="alert alert-info">
-					<h5 class="command-note-header">Note</h5>
-					<hr>
-					<p>Data for this command is updated every 5 minutes.</p>
-				</div>					
-			</div>
-			
-			<div class="command" id="gen-hololive">
-				<h3 class="command-header">Holostars Information</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">$$hololive holostars</p>
-				<h4>Description</h4>
-				<p class="command-description">View livestream information for all of Holostars. Alias is $$hl holostars</p>	
-				<div class="alert alert-info">
-					<h5 class="command-note-header">Note</h5>
-					<hr>
-					<p>Data for this command is updated every 5 minutes.</p>
-				</div>					
 			</div>
 			
 			<div class="command" id="gen-praise">

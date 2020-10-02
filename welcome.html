@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Starboard Commands | Succubus</title>
+<title>Welcome Commands | Succubus</title>
 <style>body{opacity:0%}</style>
 <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" media="none" onload="this.media='all'" crossorigin="anonymous">
@@ -47,10 +47,10 @@
 					<h4 class="sb-header">Categories</h4>
 						<a class="sb-button" href="moderation.html">Modding</a>
 						<a class="sb-button" href="logging.html">Logging</a>
-						<a class="sb-button" href="welcome.html">Welcome</a>
+						<a class="sb-button sb-button-active" href="welcome.html">Welcome</a>
 						<a class="sb-button" href="clubs.html">Ping Clubs</a>
 						<a class="sb-button" href="reaction.html">Reaction</a>
-						<a class="sb-button sb-button-active" href="starboard.html">Starboard</a>
+						<a class="sb-button" href="starboard.html">Starboard</a>
 					</div>
 			 </li>
 			 <li class = "nav-item">
@@ -63,122 +63,111 @@
 		<div class="container">
 			
 			
-			<h1 class="category-header">Starboard Commands</h1>
+			<h1 class="category-header">Welcome Commands</h1>
 			
-			<div class="alert alert-info">
-				<h4>What is Starboard?</h4>
-				<p>Starboard is an alternative to the native Discord pin message system.</p>
-                <hr class="category-header-hr"/>
-				<h5>But if Discord already has a native system, why do we need Starboard?</h5>
-				<p>Starboard has many features that makes it more useful than the native pin system</p>
-				<ul>
-					<li>All starred messages are sent to their own channel</li>
-					<li>There is no limit to the amount of messages that can be starred</li>
-					<li>Messages will be starred after they recieve a specified amount of a reaction emote specified by the server administrators</li>
-					<li>This means you can create a system to allow all users to decide which messages get pinned, but only if the desired count is reached</li>
-				</ul>
-			</div>
-			
-			<div class="command" id="star-sb">
-			  <h3 class="command-header">Starboard Information</h3>
+			<div class="command" id="welc-setwelcomechl">
+				<h3 class="command-header">Set Welcome Channel</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">starboard</p>
+				<p class="command-usage">$$setwelcomechannel <span class="arg">#channel</span></p>
 				<h4>Description</h4>
-				<p class="command-description">View the current starboard settings for the server.</p>
+				<p class="command-description">Set the channel to send the welcome message and welcome image to when a user joins the server. Leave the <span class="arg">#channel</span> blank to remove it.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Channels</p>
 				<div class="alert alert-info">
-					<h5 class="command-note-header">Alias</h5>
+					<h5 class="command-note-header">Note</h5>
 					<hr>
-					<p>All commands start with <span class="arg">starboard</span>, or the <span class="arg">sb</span> alias can be used.</p>
-				</div>
-		  </div>
-			
-			<div class="command" id="star-setup">
-				<h3 class="command-header">Starboard Setup</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">$$sb setup <span class="arg">#channel</span></p>
-				<h4>Description</h4>
-				<p class="command-description">Set the channel for starboard messages to be sent to.</p>
-				<h4>Required Permissions</h4>
-				<p class="command-perms">Manage Channels</p>
+					<p>Make sure you remember to set a welcome message!</p>
+				</div>	
 			</div>
 			
-			<div class="command" id="star-setupnsfw">
-				<h3 class="command-header">NSFW Starboard Setup</h3>
+			<div class="command" id="welc-setwelcomemsg">
+				<h3 class="command-header">Set Welcome Message</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$sb setup nsfw <span class="arg">#channel</span></p>
+				<p class="command-usage">$$setwelcomemessage <span class="arg">message</span></p>
 				<h4>Description</h4>
-				<p class="command-description">Set the channel for NSFW starboard messages to be sent to. If a message is starboarded in an NSFW channel, it will be sent here.</p>
+				<p class="command-description">Set the welcome message. You can add specific text to the welcome message to achieve various effects.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Channels</p>
-			</div>
-			
-			<div class="command" id="star-setstars">
-				<h3 class="command-header">Starboard Star Count</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">$$sb setstars <span class="arg">count</span></p>
-				<h4>Description</h4>
-				<p class="command-description">Set the required emote reactions to get onto the starboard.</p>
-				<h4>Required Permissions</h4>
-				<p class="command-perms">Manage Channels</p>
-				<div class="alert alert-danger">
-					<h5 class="command-note-header">Warning</h5>
+				<div class="alert alert-warning">
+					<h5 class="command-note-header">Welcome Message Formatting</h5>
 					<hr>
-					<p>By default, Discord's message reaction limit per emote is 5000. Make sure your star requirement is not too excessive.</p>
-				</div>
+					<p>- [userMention] => Mention the user.<br />
+					- [serverName] => Print the server name.<br />
+					- [userUsername] => Print the username of the user.<br />
+					<b>Example:</b> Welcome [userMention] to the server! => Welcome @User to the server!</p>
+				</div>	
 			</div>
 			
-			<div class="command" id="star-nsfwsetstars">
-				<h3 class="command-header">Starboard NSFW Star Count</h3>
+			<div class="command" id="welc-setleavemsg">
+				<h3 class="command-header">Set Leave Message</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$sb setstars nsfw <span class="arg">count</span></p>
+				<p class="command-usage">$$setleavemessage <span class="arg">message</span></p>
 				<h4>Description</h4>
-				<p class="command-description">Set the required emote reactions to get onto the NSFW starboard.</p>
+				<p class="command-description">Set the leave message. You can add specific text to the leave message to achieve various effects.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Channels</p>
-				<div class="alert alert-danger">
-					<h5 class="command-note-header">Warning</h5>
+				<div class="alert alert-warning">
+					<h5 class="command-note-header">Leave Message Formatting</h5>
 					<hr>
-					<p>By default, Discord's message reaction limit per emote is 5000. Make sure your star requirement is not too excessive.</p>
-				</div>
+					<p>- [userMention] => Mention the user.<br />
+					- [serverName] => Print the server name.<br />
+					- [userUsername] => Print the username of the user.<br />
+					<b>Example:</b>[userMention] has left the server! What a shame. => @User has left the server! What a shame.</p>
+				</div>	
 			</div>
 			
-			<div class="command" id="star-startop">
-				<h3 class="command-header">Starboard Leaderboard</h3>
+			<div class="command" id="welc-setwelcomeimg">
+				<h3 class="command-header">Set Welcome Image</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$startop <span class="arg">week, month, or alltime</span></p>
+				<p class="command-usage">$$setwelcomeimage <span class="arg">image url</span></p>
 				<h4>Description</h4>
-				<p class="command-description">View the top starboard post for the week, month, or all time top post. Defaults to <span class="arg">alltime</span> if nothing is input.</p>				
-			</div>
-			
-			
-			<div class="command" id="star-setemote">
-				<h3 class="command-header">Starboard Emote</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">$$sb setemote <span class="arg">emote</span></p>
-				<h4>Description</h4>
-				<p class="command-description">Set the emote that messages have to be reacted to with in order to get onto the starboard. Both Emojis and Custom Emotes work. By default, the starboard uses a star emoji. (⭐)</p>
+				<p class="command-description">Set the welcome image. Valid image formats include .jpg, .png, and .gif.</p>
 				<h4>Required Permissions</h4>
-				<p class="command-perms">Manage Channels</p>
-				<div class="alert alert-danger">
-					<h5 class="command-note-header">Warning</h5>
-					<hr>
-					<p>If you change the starboard emote with messages already on the starboard, previous starboarded messages will no longer be recognized.</p>
-				</div>
+				<p class="command-perms">Manage Channels</p>			
 			</div>
+			
+			<div class="command" id="welc-removewelcomemsg">
+				<h3 class="command-header">Remove Welcome Message</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$removewelcomemessage</p>
+				<h4>Description</h4>
+				<p class="command-description">Removes the welcome message, if one exists.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>			
+			</div>
+			
+			<div class="command" id="welc-removeleavemsg">
+				<h3 class="command-header">Remove Leave Message</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$removeleavemessage</p>
+				<h4>Description</h4>
+				<p class="command-description">Removes the leave message, if one exists.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>			
+			</div>
+			
+			<div class="command" id="welc-removewelcomeimg">
+				<h3 class="command-header">Remove Welcome Image</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$removewelcomeimage</p>
+				<h4>Description</h4>
+				<p class="command-description">Removes the welcome image, if one exists.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>			
+			</div>
+			
 			
 		</div>
 	
 		<footer>
 			<center><p class="footer-credit">Website created by Drewcification</p></center>
 		</footer>
-</body>
+	</body>
 </html>

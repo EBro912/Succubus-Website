@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Donator Commands | Succubus</title>
+<title>Hololive Commands | Succubus</title>
 <style>body{opacity:0%}</style>
 <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" media="none" onload="this.media='all'" crossorigin="anonymous">
@@ -33,10 +33,10 @@
 				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 					<h4 class="sb-header">Categories</h4>
 					<a class="sb-button" href="general.html">General</a>
-					<a class="sb-button" href="hololive.html">Hololive</a>
+					<a class="sb-button sb-button-active" href="hololive.html">Hololive</a>
 					<a class="sb-button" href="saucenao.html">SauceNAO</a>
 					<a class="sb-button" href="music.html">Music</a>
-					<a class="sb-button sb-button-active" href="donator.html">Donator</a>
+					<a class="sb-button" href="donator.html">Donator</a>
 				</div>
 			 </li>
 			 <li class="nav-item dropdown">
@@ -63,75 +63,69 @@
 		<div class="container">
 			
 			
-			<h1 class="category-header">Donator Commands</h1>
-					
-			<div class="alert alert-info">
-				<h4 style="text-align:center">You need to be a donator to use these commands</h4>
-				 <hr class="category-header-hr"/>
-				 <p>If you would like to donate, you can do so on Succubus's <a href="https://www.patreon.com/succubusbot" target="_blank">Patreon</a><br />
-				 New Donator commands are coming soon!</p>
-			</div>
+			<h1 class="category-header">Hololive Commands</h1>
 			
-			<div class="command" id="donator-lyrics">
-			  <h3 class="command-header">Song Lyrics</h3>
+			<div class="command" id="hl-base">
+				<h3 class="command-header">View All Streams</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">lyrics <span class="arg">song title</span></p>
+				<p class="command-usage">$$hololive</p>
 				<h4>Description</h4>
-				<p class="command-description">Search the Genius lyrics database for the input song lyrics.</p>
-		  </div>
-		  
-		  <div class="command" id="donator-playlists">
-			  <h3 class="command-header">Extra Playlists</h3>
-				<hr class="category-header-hr"/>			
-				<h4>Description</h4>
-				<p class="command-description">Tier 1 Donators get 6 Playlists with 30 Songs Each!<br />Tier 2 Donators get 12 Playlists with 50 songs each!</p>
-		  </div>
-		  
-		  <div class="command" id="donator-premium">
-			  <h3 class="command-header">Server Premium</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">premium</p>
-				<h4>Description</h4>
-				<p class="command-description">Marks the server you are currently in as a Premium servers, and gives it access to special perks.</p>
+				<p class="command-description">View live and upcoming streams for all Hololive VTubers. Data is updated every 5 minutes.</p>
 				<div class="alert alert-info">
 					<h5 class="command-note-header">Note</h5>
 					<hr>
-					<p>Tier 2 Donator is required to give servers Premium status</p>
+					<p>The alias $$hl works as well.</p>
 				</div>	
-				<div class="alert alert-warning">
-					<h5 class="command-note-header">Warning</h5>
-					<hr>
-					<p>Once you give a server premium, you CANNOT change it. Make your choice count!</p>
-				</div>	
-		  </div>
-		  
-		  <div class="command" id="donator-settings">
-				<h3 class="command-header">Hololive Personal Notification Settings</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">$$hlnotifyme</p>
-				<h4>Description</h4>
-				<p class="command-description">View your personal settings for the Hololive notifier.</p>				
 			</div>
 			
-			<div class="command" id="donator-setup">
-				<h3 class="command-header">Personal Notifier Setup</h3>
+			<div class="command" id="hl-name">
+				<h3 class="command-header">View Specific VTuber</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hlnotifyme setup</p>
+				<p class="command-usage">$$hololive <span class="arg">VTuber</span></p>
 				<h4>Description</h4>
-				<p class="command-description">Setup Hololive notifications in your Direct Messages.</p>			
+				<p class="command-description">View data specific to the input <span class="arg">VTuber</span>, such as their status, viewer count, etc.</p>				
 			</div>
 			
-			<div class="command" id="donator-msg">
-				<h3 class="command-header">Personal Notifier Message</h3>
+			<div class="command" id="hl-stars">
+				<h3 class="command-header">View Holostars Data</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hlnotifyme setmsg</p>
+				<p class="command-usage">$$hololive holostars</p>
+				<h4>Description</h4>
+				<p class="command-description">View all data for the Holostars section of Hololive.</p>				
+			</div>
+			
+			<div class="command" id="hl-settings">
+				<h3 class="command-header">Hololive Notification Settings</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$hlnotify</p>
+				<h4>Description</h4>
+				<p class="command-description">View the server's settings for the Hololive notifier.</p>				
+			</div>
+			
+			<div class="command" id="hl-setup">
+				<h3 class="command-header">Hololive Notifier Setup</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$hlnotify setup <span class="arg">channel</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Setup Hololive notifications in the given <span class="arg">channel</span>.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>				
+			</div>
+			
+			<div class="command" id="hl-msg">
+				<h3 class="command-header">Hololive Notifier Message</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$hlnotify setmsg</p>
 				<h4>Description</h4>
 				<p class="command-description">Opens a prompt to set a custom message that displays when a VTuber goes live.</p>	
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>
 				<div class="alert alert-info">
 					<h5 class="command-note-header">Note</h5>
 					<hr>
@@ -141,42 +135,48 @@
 				</div>	
 			</div>
 			
-			<div class="command" id="donator-add">
-				<h3 class="command-header">Add To Personal Notifier</h3>
+			<div class="command" id="hl-add">
+				<h3 class="command-header">Add To Notifier</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hlnotifyme add <span class="arg">VTuber</span></p>
+				<p class="command-usage">$$hlnotify add <span class="arg">VTuber</span></p>
 				<h4>Description</h4>
-				<p class="command-description">Adds the specified <span class="arg">VTuber</span> to your notifier. Notifications will be recieved whenever they go live.</p>		
-				<div class="alert alert-info">
-					<h5 class="command-note-header">Note</h5>
-					<hr>
-					<p>Tier 1 Donators get access to 3 personal notifiers, while Tier 2 Donators get access to 6</p>
-				</div>					
+				<p class="command-description">Adds the specified <span class="arg">VTuber</span> to the notifier. Notifications will be recieved whenever they go live.</p>	
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>				
 			</div>
 			
-			<div class="command" id="donator-remove">
-				<h3 class="command-header">Remove From Personal Notifier</h3>
+			<div class="command" id="hl-remove">
+				<h3 class="command-header">Remove From Notifier</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hlnotifyme remove <span class="arg">VTuber</span></p>
+				<p class="command-usage">$$hlnotify remove <span class="arg">VTuber</span></p>
 				<h4>Description</h4>
-				<p class="command-description">Removes the specified <span class="arg">VTuber</span> from your notifier.</p>							
+				<p class="command-description">Removes the specified <span class="arg">VTuber</span> from the notifier.</p>			
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>				
 			</div>
 			
-			<div class="command" id="donator-preview">
-				<h3 class="command-header">Preview Personal Notifier Message</h3>
+			<div class="command" id="hl-preview">
+				<h3 class="command-header">Preview Notifier Message</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hlnotifyme preview</p>
+				<p class="command-usage">$$hlnotify preview</p>
 				<h4>Description</h4>
-				<p class="command-description">Preview the message that gets displayed in your DMs whenever a VTuber goes live.</p>				
+				<p class="command-description">Preview the message that gets displayed whenever a VTuber goes live.</p>	
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>
 			</div>
-		  		
-</div>
+			
+			<div class="command" id="hl-personal">
+				<h3 class="command-header">Personal Notifiers</h3>
+				<p class="command-usage">Donators get access to personal Hololive notifiers sent to their Direct Messages. See the <a href="donator.html" target="_blank">Donator</a> page for more information.</p>				
+			</div>
+			
+		</div>
 	
 		<footer>
-			<p class="footer-credit">Website created by Drewcification</p>
+			<center><p class="footer-credit">Website created by Drewcification</p></center>
 		</footer>
-</body>
+	</body>
 </html>
