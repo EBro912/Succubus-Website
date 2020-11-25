@@ -153,7 +153,7 @@
 				<h3 class="command-header">Starboard Leaderboard</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$startop <span class="arg">week, month, or alltime</span></p>
+				<p class="command-usage">$$sb top <span class="arg">week, month, or alltime</span></p>
 				<h4>Description</h4>
 				<p class="command-description">View the top starboard post for the week, month, or all time top post. Defaults to <span class="arg">alltime</span> if nothing is input.</p>				
 			</div>
@@ -173,6 +173,17 @@
 					<hr>
 					<p>If you change the starboard emote with messages already on the starboard, previous starboarded messages will no longer be recognized.</p>
 				</div>
+			</div>
+			
+			<div class="command" id="star-selfstar">
+				<h3 class="command-header">Self-Star Mode</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$sb selfstar <span class="arg">true/false</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Sets whether or not users should be allowed to starboard their own posts. If false, and a user tries to star their own post, it will be removed.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>				
 			</div>
 			
 		</div>
