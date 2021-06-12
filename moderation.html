@@ -147,6 +147,64 @@
 				<p class="command-perms">Manage Roles</p>
 			</div>
 			
+			<div class="command" id="mod-autobansettings">
+				<h3 class="command-header">View AutoBan Settings</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$autoban</p>
+				<h4>Description</h4>
+				<p class="command-description">View the AutoBan system settings for the server.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Roles</p>
+				<div class="alert alert-danger">
+					<h5 class="command-note-header">Warning</h5>
+					<p>AutoBan conditions with Notify set to true will NOT autoban matching users, and will instead send a notification to the set notification channel, as seen below.</p>
+				</div>
+			</div>
+			
+			<div class="command" id="mod-setnotifychannel">
+				<h3 class="command-header">Set AutoBan Notification Channel</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$autoban setnotify <span class="arg">channel</span> <span class="arg">[role]</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Sets the channel where AutoBan conditions marked as notify will be sent. If a role is set, the role will be mentioned as well.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Administrator</p>
+			</div>
+			
+			<div class="command" id="mod-addcondition">
+				<h3 class="command-header">Add AutoBan Condition</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$autoban add <span class="arg">condition</span> <span class="arg">[match full name]</span> <span class="arg">[match case]</span> <span class="arg">[notify]</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Adds a new condition to the AutoBan system. The 3 remaining parameters are other settings that should be provided as true or false. By default, <span class="arg">notify</span> is true.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Administrator</p>
+			</div>
+			
+			<div class="command" id="mod-removecondition">
+				<h3 class="command-header">Remove AutoBan Condition</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$autoban remove <span class="arg">condition</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Removes a condition from the AutoBan system.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Administrator</p>
+			</div>
+			
+			<div class="command" id="mod-removecondition">
+				<h3 class="command-header">Toggle Condition Settings</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">$$autoban toggle <span class="arg">condition</span> <span class="arg">full/case/notify</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Toggles a condition's individual settings between true and false.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Administrator</p>
+			</div>
 			
 		</div>
 	
