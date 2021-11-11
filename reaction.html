@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta property="og:title" content="Succubus | Reaction Role Commands" />
+<meta property="og:url" content= "https://www.succubusbot.xyz/" />
+<meta property="og:image" content="succubus-logo.png" />
 <title>Reaction Commands | Succubus</title>
 <style>body{opacity:0%}</style>
 <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
@@ -77,23 +80,18 @@
 			  <h3 class="command-header">Reaction Role Info</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">reactionrole</p>
+				<p class="command-usage">/reaction-role settings</p>
 				<h4>Description</h4>
 				<p class="command-description">View the current reaction role settings for the server.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Roles</p>
-				<div class="alert alert-info">
-					<h5 class="command-note-header">Alias</h5>
-					<hr>
-					<p>All commands start with <span class="arg">reactionrole</span>, or the <span class="arg">rr</span> alias.</p>
-				</div>
 		  </div>
 			
 		  <div class="command" id="react-setchannel">
 				<h3 class="command-header">Set Reaction Role Channel</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$rr setchannel <span class="arg">#channel</span></p>
+				<p class="command-usage">/reaction-role set-channel <span class="arg">channel</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Specify which channel to put reaction messages in.</p>
 				<h4>Required Permissions</h4>
@@ -104,23 +102,18 @@
 				<h3 class="command-header">Create Reaction Message</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$rr createmsg <span class="arg">"title"</span> <span class="arg">description</span></p>
+				<p class="command-usage">/reaction-role create-msg <span class="arg">title</span> <span class="arg">description</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Create a reaction role message in the server's reaction channel using the given title and description.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Roles</p>
-				<div class="alert alert-info">
-					<h5 class="command-note-header">Note</h5>
-					<hr>
-					<p>Make sure you wrap your title in quotes if it has spaces.</p>
-				</div>
 			</div>
 			
 			<div class="command" id="react-removemsg">
 				<h3 class="command-header">Remove Reaction Message</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$rr remove <span class="arg">message id</span></p>
+				<p class="command-usage">/reaction-role remove-msg <span class="arg">message id</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Remove a reaction message. This also removes all associated reaction roles.</p>
 				<h4>Required Permissions</h4>
@@ -132,7 +125,7 @@
 				<h3 class="command-header">Add Reaction Role</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$rr addrole <span class="arg">message id</span> <span class="arg">emote</span> <span class="arg">role</span></p>
+				<p class="command-usage">/reaction-role add-role <span class="arg">message id</span> <span class="arg">emote</span> <span class="arg">role</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Add a reaction role to the given reaction message, using the input reaction emote. When reacted to, it will give that person the role.</p>
 				<h4>Required Permissions</h4>
@@ -140,7 +133,7 @@
 				<div class="alert alert-info">
 					<h5 class="command-note-header">Note</h5>
 					<hr>
-					<p>You may notice the reaction gets removed after you react. This is completely normal behavior. To see the reaction role totals, use the $$rolecount command.</p>
+					<p>You may notice the reaction gets removed after you react. This is completely normal behavior if a role limit is enabled.</p>
 					<img src="react.gif"></img>
 				</div>
 				
@@ -152,7 +145,7 @@
 				<h3 class="command-header">Remove Reaction Role</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$rr delrole <span class="arg">message id</span> <span class="arg">role</span></p>
+				<p class="command-usage">/reaction-role del-role <span class="arg">message id</span> <span class="arg">role</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Remove a reaction role from a reaction message.</p>
 				<h4>Required Permissions</h4>
@@ -164,7 +157,7 @@
 				<h3 class="command-header">Edit Reaction Message</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$rr edit <span class="arg">message id</span> <span class="arg">title, description, or color</span> <span class="arg">value</span></p>
+				<p class="command-usage">/reaction-role edit-msg <span class="arg">message id</span> <span class="arg">title, description, or color</span> <span class="arg">value</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Edit a reaction message's title, description, or color.</p>
 				<h4>Required Permissions</h4>
@@ -180,9 +173,9 @@
 				<h3 class="command-header">Toggle Role Limit</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$rr togglelimit</p>
+				<p class="command-usage">/reaction-role limit-roles <span class="arg">message id</span> <span class="arg">setting</span></p>
 				<h4>Description</h4>
-				<p class="command-description">When this is enabled, users will only be allowed 1 role per reaction message.</p>
+				<p class="command-description">When this is enabled, users will only be allowed 1 role on the given reaction message.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Roles</p>
 				
@@ -192,7 +185,7 @@
 </div>
 	
 		<footer>
-			<p class="footer-credit">Website created by Drewcification</p>
+			<p class="footer-credit">Website design created by Drewcification</p>
 		</footer>
 </body>
 </html>

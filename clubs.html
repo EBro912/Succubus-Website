@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta property="og:title" content="Succubus | Ping Club Commands" />
+<meta property="og:url" content= "https://www.succubusbot.xyz/" />
+<meta property="og:image" content="succubus-logo.png" />
 <title>Ping Club Commands | Succubus</title>
 <style>body{opacity:0%}</style>
 <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
@@ -78,16 +81,16 @@
 			  <h3 class="command-header">User Ping Club</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$pingclub <span class="arg">[user]</span></p>
+				<p class="command-usage">/pclub info<span class="arg">[user]</span></p>
 				<h4>Description</h4>
-				<p class="command-description">View the ping clubs that you or another user are in. Note: All ping club commands also work with the $$pclub alias.</p>
+				<p class="command-description">View the ping clubs that you or another user are in.</p>
 		  </div>
 			
 			<div class="command" id="club-list">
 			  <h3 class="command-header">List Ping Clubs</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$pingclub list</p>
+				<p class="command-usage">/pclub list</p>
 				<h4>Description</h4>
 				<p class="command-description">List all ping clubs in the server.</p>
 		  </div>
@@ -96,7 +99,7 @@
 			  <h3 class="command-header">Ping Club Users</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$pingclub users <span class="arg">club</span> </p>
+				<p class="command-usage">/pclub users <span class="arg">club</span> </p>
 				<h4>Description</h4>
 				<p class="command-description">View all users in the given ping club.</p>
 		  </div>
@@ -105,7 +108,7 @@
 			  <h3 class="command-header">Add Ping Club</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$pingclub add <span class="arg">name</span></p>
+				<p class="command-usage">/pclub add <span class="arg">name</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Create an empty ping club, under the input name. Note: You are only allowed to have up to 10 ping clubs at a time.</p>
 				<h4>Required Permissions</h4>
@@ -116,7 +119,7 @@
 			  <h3 class="command-header">Remove Ping Club</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$pingclub remove <span class="arg">name</span></p>
+				<p class="command-usage">/pclub remove <span class="arg">name</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Remove a ping club, and all of it's associated users.</p>
 				<h4>Required Permissions</h4>
@@ -127,7 +130,7 @@
 			  <h3 class="command-header">Join Ping Club</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$pingclub join <span class="arg">name</span></p>
+				<p class="command-usage">/pclub join <span class="arg">name</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Join a ping club. There is no limit as to how many ping clubs a user can join.</p>
 				
@@ -137,7 +140,7 @@
 			  <h3 class="command-header">Leave Ping Club</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$pingclub leave <span class="arg">name</span></p>
+				<p class="command-usage">/pclub leave <span class="arg">name</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Leave a ping club.</p>
 				
@@ -147,7 +150,7 @@
 			  <h3 class="command-header">Rename Ping Club</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$pingclub rename <span class="arg">club</span> <span class="arg">new name</span></p>
+				<p class="command-usage">/pclub rename <span class="arg">club</span> <span class="arg">new name</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Rename a ping club. Note: If the original club name has spaces, make sure you surround it in quotes.</p>
 				<h4>Required Permissions</h4>
@@ -159,7 +162,7 @@
 			  <h3 class="command-header">Mention Ping Club</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$cping <span class="arg">club</span> <span class="arg">[message]</span></p>
+				<p class="command-usage">/cping <span class="arg">club</span> <span class="arg">[message]</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Mention ALL users in the given ping club with the given message, in the current channel.</p>
 				<div class="alert alert-info">
@@ -173,7 +176,7 @@
 			  <h3 class="command-header">Mention Ping Club in a Channel</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$cpingchnl <span class="arg">channel</span> <span class="arg">club</span> <span class="arg">[message]</span></p>
+				<p class="command-usage">/cping-channel <span class="arg">channel</span> <span class="arg">club</span> <span class="arg">[message]</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Mention ALL users in the given ping club with the given message, in the input channel. Make sure the bot has permissions for said channel.</p>
 				<div class="alert alert-info">
@@ -188,7 +191,7 @@
 			  <h3 class="command-header">Ping Club Mention Mode</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$pingclub pingtoggle <span class="arg">club</span></p>
+				<p class="command-usage">/pclub mod-ping <span class="arg">club</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Toggle the pingability of a ping club, to whether only moderators can ping clubs to if anyone can. By default, only moderators can ping clubs.</p>
 				<h4>Required Permissions</h4>
@@ -199,7 +202,7 @@
 		</div>
 	
 		<footer>
-			<center><p class="footer-credit">Website created by Drewcification</p></center>
+			<center><p class="footer-credit">Website design created by Drewcification</p></center>
 		</footer>
 </body>
 </html>

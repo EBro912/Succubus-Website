@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta property="og:title" content="Succubus | Moderation Commands" />
+<meta property="og:url" content= "https://www.succubusbot.xyz/" />
+<meta property="og:image" content="succubus-logo.png" />
 <title>Moderation Commands | Succubus</title>
 <style>body{opacity:0%}</style>
 <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
@@ -69,7 +72,7 @@
 				<h3 class="command-header">Kick</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$kick <span class="arg">user</span></p>
+				<p class="command-usage">/kick <span class="arg">user</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Kick the input <span class="arg">user</span> from the server.</p>
 				<h4>Required Permissions</h4>
@@ -80,7 +83,7 @@
 				<h3 class="command-header">Ban</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$ban <span class="arg">user</span></p>
+				<p class="command-usage">/ban <span class="arg">user</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Ban the input <span class="arg">user</span> from the server.</p>
 				<h4>Required Permissions</h4>
@@ -91,7 +94,7 @@
 				<h3 class="command-header">Preemtive Ban</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$ban <span class="arg">user id</span></p>
+				<p class="command-usage">/ban-id <span class="arg">user id</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Ban the input <span class="arg">user id</span> from the server, even if they are not in the server.</p>
 				<h4>Required Permissions</h4>
@@ -102,37 +105,26 @@
 				<h3 class="command-header">Purge</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$purge <span class="arg"># of messages</span> <span class="arg">[user]</span></p>
+				<p class="command-usage">/purge <span class="arg"># of messages</span> <span class="arg">[user]</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Remove <span class="arg"># of messages</span> from the current channel. If a user is specified, only that user's messages will be deleted.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Messages</p>
 			</div>
 			
-			<div class="command" id="mod-setprefix">
-				<h3 class="command-header">Set Bot Prefix</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">$$setprefix <span class="arg">prefix</span></p>
-				<h4>Description</h4>
-				<p class="command-description">Set the bot's prefix to the input <span class="arg">prefix</span>. Limited to 5 characters.</p>
-				<h4>Required Permissions</h4>
-				<p class="command-perms">Administrator</p>
-			</div>
-			
 			<div class="command" id="mod-setacceptrole">
 				<h3 class="command-header">Set Accept Role</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$accept setrole <span class="arg">role</span></p>
+				<p class="command-usage">/accept-settings-setrole <span class="arg">role</span></p>
 				<h4>Description</h4>
-				<p class="command-description">Set the <span class="arg">role</span> that is automatically given to users when they join. They will have to $$accept the rules in order to remove it.</p>
+				<p class="command-description">Set the <span class="arg">role</span> that is automatically given to users when they join. They will have to /accept the rules in order to remove it.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Roles</p>
 				<div class="alert alert-info">
 					<h5 class="command-note-header">Note</h5>
 					<hr>
-					<p>Usually, you will explain how to accept the rules in your designated rules channel. (Ex. "Type $$accept to gain access to the rest of the channels!") The user will then type the command in your welcome channel to remove the role. This command assumes you have set up your channel permissions correctly.</p>
+					<p>Usually, you will explain how to accept the rules in your designated rules channel. (Ex. "Type /accept to gain access to the rest of the channels!") The user will then type the command in your welcome channel to remove the role. This command assumes you have set up your channel permissions correctly.</p>
 				</div>	
 			</div>
 			
@@ -140,9 +132,20 @@
 				<h3 class="command-header">Set Accept Mode</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$accept setmode <span class="arg">remove/add</span></p>
+				<p class="command-usage">/accept-settings-setmode <span class="arg">remove/add</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Set the mode of the accept, whether it should <span class="arg">add</span> or <span class="arg">remove</span> the accept role when a user accepts the rules.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Roles</p>
+			</div>
+			
+			<div class="command" id="mod-delacceptrole">
+				<h3 class="command-header">Remove Accept Role</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">/accept-settings-delrole</p>
+				<h4>Description</h4>
+				<p class="command-description">Remove the set role from the accept module.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Roles</p>
 			</div>
@@ -151,7 +154,7 @@
 				<h3 class="command-header">View AutoBan Settings</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$autoban</p>
+				<p class="command-usage">/autoban settings</p>
 				<h4>Description</h4>
 				<p class="command-description">View the AutoBan system settings for the server.</p>
 				<h4>Required Permissions</h4>
@@ -166,7 +169,7 @@
 				<h3 class="command-header">Set AutoBan Notification Channel</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$autoban setnotify <span class="arg">channel</span> <span class="arg">[role]</span></p>
+				<p class="command-usage">/autoban setnotify <span class="arg">channel</span> <span class="arg">[role]</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Sets the channel where AutoBan conditions marked as notify will be sent. If a role is set, the role will be mentioned as well.</p>
 				<h4>Required Permissions</h4>
@@ -177,9 +180,9 @@
 				<h3 class="command-header">Add AutoBan Condition</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$autoban add <span class="arg">condition</span> <span class="arg">[match full name]</span> <span class="arg">[match case]</span> <span class="arg">[notify]</span></p>
+				<p class="command-usage">/autoban add <span class="arg">condition</span> <span class="arg">match full name</span> <span class="arg">match case</span> <span class="arg">notify</span></p>
 				<h4>Description</h4>
-				<p class="command-description">Adds a new condition to the AutoBan system. The 3 remaining parameters are other settings that should be provided as true or false. By default, <span class="arg">notify</span> is true.</p>
+				<p class="command-description">Adds a new condition to the AutoBan system. The 3 remaining parameters are other settings that should be provided as true or false.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Administrator</p>
 			</div>
@@ -188,7 +191,7 @@
 				<h3 class="command-header">Remove AutoBan Condition</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$autoban remove <span class="arg">condition</span></p>
+				<p class="command-usage">/autoban remove <span class="arg">condition</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Removes a condition from the AutoBan system.</p>
 				<h4>Required Permissions</h4>
@@ -199,7 +202,7 @@
 				<h3 class="command-header">Toggle Condition Settings</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$autoban toggle <span class="arg">condition</span> <span class="arg">full/case/notify</span></p>
+				<p class="command-usage">/autoban toggle <span class="arg">condition</span> <span class="arg">full/case/notify</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Toggles a condition's individual settings between true and false.</p>
 				<h4>Required Permissions</h4>
@@ -209,7 +212,7 @@
 		</div>
 	
 		<footer>
-			<center><p class="footer-credit">Website created by Drewcification</p></center>
+			<center><p class="footer-credit">Website design created by Drewcification</p></center>
 		</footer>
 	</body>
 </html>

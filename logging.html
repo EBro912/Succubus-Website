@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta property="og:title" content="Succubus | Logging Commands" />
+<meta property="og:url" content= "https://www.succubusbot.xyz/" />
+<meta property="og:image" content="succubus-logo.png" />
 <title>Logging Commands | Succubus</title>
 <style>body{opacity:0%}</style>
 <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
@@ -69,7 +72,7 @@
 				<h3 class="command-header">View Log Settings</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$log</p>
+				<p class="command-usage">/log settings</p>
 				<h4>Description</h4>
 				<p class="command-description">View the log settings for the server, including which events are logged.</p>
 				<h4>Required Permissions</h4>
@@ -80,7 +83,7 @@
 				<h3 class="command-header">Set Log Channel</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$log set <span class="arg">channel</span></p>
+				<p class="command-usage">/log set <span class="arg">channel</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Sets the specified <span class="arg">channel</span> for the bot to log server events in.</p>
 				<h4>Required Permissions</h4>
@@ -91,9 +94,20 @@
 				<h3 class="command-header">Config Logging</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$log config</p>
+				<p class="command-usage">/log modify</p>
 				<h4>Description</h4>
-				<p class="command-description">Opens an interactive config to choose which actions and events are logged in your server.</p>
+				<p class="command-description">Choose which actions and events are logged in your server.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>
+			</div>
+			
+			<div class="command" id="log-disable">
+				<h3 class="command-header">Disable Logging</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">/log disable</p>
+				<h4>Description</h4>
+				<p class="command-description">Disables all logging in your server.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Channels</p>
 			</div>
@@ -102,7 +116,7 @@
 		</div>
 	
 		<footer>
-			<center><p class="footer-credit">Website created by Drewcification</p></center>
+			<center><p class="footer-credit">Website design created by Drewcification</p></center>
 		</footer>
 	</body>
 </html>

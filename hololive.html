@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta property="og:title" content="Succubus | Hololive Commands" />
+<meta property="og:url" content= "https://www.succubusbot.xyz/" />
+<meta property="og:image" content="succubus-logo.png" />
 <title>Hololive Commands | Succubus</title>
 <style>body{opacity:0%}</style>
 <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
@@ -69,21 +72,16 @@
 				<h3 class="command-header">View All Streams</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hololive</p>
+				<p class="command-usage">/hl</p>
 				<h4>Description</h4>
 				<p class="command-description">View live and upcoming streams for all Hololive VTubers. Data is updated every minute.</p>
-				<div class="alert alert-info">
-					<h5 class="command-note-header">Note</h5>
-					<hr>
-					<p>The alias $$hl works as well.</p>
-				</div>	
 			</div>
 			
 			<div class="command" id="hl-name">
 				<h3 class="command-header">View Specific VTuber</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hololive <span class="arg">VTuber</span></p>
+				<p class="command-usage">/hl <span class="arg">VTuber</span></p>
 				<h4>Description</h4>
 				<p class="command-description">View data specific to the input <span class="arg">VTuber</span>, such as their status, viewer count, etc.</p>				
 			</div>
@@ -92,7 +90,7 @@
 				<h3 class="command-header">View Holostars Data</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hololive holostars</p>
+				<p class="command-usage">/hl-holostars</p>
 				<h4>Description</h4>
 				<p class="command-description">View all data for the Holostars section of Hololive.</p>				
 			</div>
@@ -101,7 +99,7 @@
 				<h3 class="command-header">Set Timezone</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$timezone [shortened timezone]</p>
+				<p class="command-usage">/timezone [shortened timezone]</p>
 				<h4>Description</h4>
 				<p class="command-description">Sets the timezone to use for Hololive status data. If left blank, the current timezone will be displayed. By default, the data will use EST.</p>
 				<h4>Required Permissions</h4>
@@ -116,7 +114,7 @@
 				<h3 class="command-header">Hololive Notification Settings</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hlnotify</p>
+				<p class="command-usage">/hl-notify settings</p>
 				<h4>Description</h4>
 				<p class="command-description">View the server's settings for the Hololive notifier.</p>				
 			</div>
@@ -125,7 +123,7 @@
 				<h3 class="command-header">Hololive Notifier Setup</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hlnotify setup <span class="arg">channel</span></p>
+				<p class="command-usage">/hl-notify setup <span class="arg">channel</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Setup Hololive notifications in the given <span class="arg">channel</span>.</p>
 				<h4>Required Permissions</h4>
@@ -136,9 +134,9 @@
 				<h3 class="command-header">Hololive Notifier Message</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hlnotify setmsg</p>
+				<p class="command-usage">/hl-notify set-msg <span class="arg">message</span></p>
 				<h4>Description</h4>
-				<p class="command-description">Opens a prompt to set a custom message that displays when a VTuber goes live.</p>	
+				<p class="command-description">Set a custom message that displays when a VTuber goes live.</p>	
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Channels</p>
 				<div class="alert alert-info">
@@ -154,7 +152,7 @@
 				<h3 class="command-header">Add To Notifier</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hlnotify add <span class="arg">VTuber</span></p>
+				<p class="command-usage">/hl-notify add <span class="arg">VTuber</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Adds the specified <span class="arg">VTuber</span> to the notifier. Notifications will be recieved whenever they go live.</p>	
 				<h4>Required Permissions</h4>
@@ -165,7 +163,7 @@
 				<h3 class="command-header">Remove From Notifier</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hlnotify remove <span class="arg">VTuber</span></p>
+				<p class="command-usage">/hl-notify remove <span class="arg">VTuber</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Removes the specified <span class="arg">VTuber</span> from the notifier.</p>			
 				<h4>Required Permissions</h4>
@@ -176,7 +174,7 @@
 				<h3 class="command-header">Preview Notifier Message</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$hlnotify preview</p>
+				<p class="command-usage">/hl-notify preview</p>
 				<h4>Description</h4>
 				<p class="command-description">Preview the message that gets displayed whenever a VTuber goes live.</p>	
 				<h4>Required Permissions</h4>
@@ -191,7 +189,7 @@
 		</div>
 	
 		<footer>
-			<center><p class="footer-credit">Website created by Drewcification</p></center>
+			<center><p class="footer-credit">Website design created by Drewcification</p></center>
 		</footer>
 	</body>
 </html>

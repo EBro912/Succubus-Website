@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta property="og:title" content="Succubus | Sauce Commands" />
+<meta property="og:url" content= "https://www.succubusbot.xyz/" />
+<meta property="og:image" content="succubus-logo.png" />
 <title>SauceNAO Commands | Succubus</title>
 <style>body{opacity:0%}</style>
 <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
@@ -69,7 +72,7 @@
 				<h3 class="command-header">Sauce An Image</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$sauce <span class="arg">[url]</span></p>
+				<p class="command-usage">/sauce <span class="arg">[url]</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Search the <a href="https://saucenao.com/" target="blank_">SauceNAO</a> databases for the given image url. If no image url is provided, the first image in the past 20 messages will be used.</p>
 				<div class="alert alert-info">
@@ -78,32 +81,12 @@
 					<p>Valid image formats include .PNG, .JPG, and .GIF</p>
 				</div>	
 			</div>
-			
-			<div class="command" id="sauce-settings">
-				<h3 class="command-header">SauceNAO Settings</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">$$saucenao</p>
-				<h4>Description</h4>
-				<p class="command-description">View the current SauceNAO settings for the server.</p>				
-			</div>
-			
-			<div class="command" id="sauce-delete">
-				<h3 class="command-header">Toggle Input Deletion</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">$$saucenao toggledel</p>
-				<h4>Description</h4>
-				<p class="command-description">Toggle whether input images should be deleted or not. (Only when a URL is given)</p>			
-				<h4>Required Permissions</h4>
-				<p class="command-perms">Manage Messages</p>				
-			</div>
-			
+
 			<div class="command" id="sauce-results">
 				<h3 class="command-header">Set Result Count</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$saucenao setresults <span class="arg">amount</span></p>
+				<p class="command-usage">/sauce-setresults <span class="arg">amount</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Modify the <span class="arg">amount</span> of results the sauce command returns, from 1 to 5.</p>		
 				<h4>Required Permissions</h4>
@@ -114,17 +97,28 @@
 				<h3 class="command-header">Lock Sauce Command</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$saucenao lock <span class="arg">channel</span></p>
+				<p class="command-usage">/sauce-lock <span class="arg">channel</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Locks the sauce command to the specified <span class="arg">channel</span>, so that sauce queries may only be run in that channel.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Channels</p>					
-			</div>			
+			</div>		
+
+			<div class="command" id="sauce-lock">
+				<h3 class="command-header">Unlock Sauce Command</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">/sauce-unlock</p>
+				<h4>Description</h4>
+				<p class="command-description">Unlocks the sauce command if it is locked.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>					
+			</div>				
 			
 		</div>
 	
 		<footer>
-			<center><p class="footer-credit">Website created by Drewcification</p></center>
+			<center><p class="footer-credit">Website design created by Drewcification</p></center>
 		</footer>
 	</body>
 </html>

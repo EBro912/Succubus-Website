@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta property="og:title" content="Succubus | General Commands" />
+<meta property="og:url" content= "https://www.succubusbot.xyz/" />
+<meta property="og:image" content="succubus-logo.png" />
 <title>General Commands | Succubus</title>
 <style>body{opacity:0%}</style>
 <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
@@ -69,16 +72,16 @@
 				<h3 class="command-header">Help</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$help <span class="arg">[category]</span></p>
+				<p class="command-usage">/help <span class="arg">[category]</span></p>
 				<h4>Description</h4>
-				<p class="command-description">Recieve help on the input <span class="arg">category</span>. If no category is input, all valid categories will be listed.</p>
+				<p class="command-description">Recieve help on the input <span class="arg">category</span>.</p>
 			</div>
 			
 			<div class="command" id="gen-ping">
 				<h3 class="command-header">Ping</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$ping</p>
+				<p class="command-usage">/ping</p>
 				<h4>Description</h4>
 				<p class="command-description">View the bot's latency and Discord's latency.</p>				
 			</div>
@@ -87,7 +90,7 @@
 				<h3 class="command-header">Invite</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$invite</p>
+				<p class="command-usage">/invite</p>
 				<h4>Description</h4>
 				<p class="command-description">View the link to invite Succubus to your own server, and a link to the Succubus Support server.</p>				
 			</div>
@@ -96,7 +99,7 @@
 				<h3 class="command-header">Changelog</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$changelog</p>
+				<p class="command-usage">/changelog</p>
 				<h4>Description</h4>
 				<p class="command-description">View the most recent changes made to Succubus.</p>				
 			</div>
@@ -105,39 +108,17 @@
 				<h3 class="command-header">Avatar</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$ava <span class="arg">[user]</span></p>
+				<p class="command-usage">/ava <span class="arg">[user]</span></p>
 				<h4>Description</h4>
 				<p class="command-description">View the avatar if the input <span class="arg">user</span>. If no user is input, gets your own avatar.</p>				
 			</div>
 			
-			<div class="command" id="gen-mtg">
-				<h3 class="command-header">Magic the Gathering</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">$$mtg <span class="arg">card name</span></p>
-				<h4>Description</h4>
-				<p class="command-description">Searches the <a href="https://scryfall.com/" target="_blank">Scryfall</a> Magic the Gathering card database for the input <span class="arg">card name</span>.</p>	
-				<div class="alert alert-info">
-					<h5 class="command-note-header">Note</h5>
-					<hr>
-					<p>This command is still in a beta testing phase, so some card results may not work.</p>
-				</div>	
-			</div>
-			
-			<div class="command" id="gen-mora">
-				<h3 class="command-header">Genshin Impact Mora+EXP Calculator</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">$$mora</p>
-				<h4>Description</h4>
-				<p class="command-description">Opens a prompt to calculate the required Mora and EXP books to level up a character to a desired level.</p>				
-			</div>
 			
 			<div class="command" id="gen-bigemote">
 				<h3 class="command-header">Big Emote</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$bigemote <span class="arg">emote</span></p>
+				<p class="command-usage">/bigemote <span class="arg">emote</span></p>
 				<h4>Description</h4>
 				<p class="command-description">View an image version of the input custom emote. Regular emojis do not work.</p>				
 			</div>
@@ -146,7 +127,7 @@
 			  <h3 class="command-header">Server Count</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$servercount</p>
+				<p class="command-usage">/servercount</p>
 				<h4>Description</h4>
 				<p class="command-description">View how many servers Succubus is currently in.</p>
 		  </div>
@@ -155,7 +136,7 @@
 			  <h3 class="command-header">Succubus Stats</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$stats</p>
+				<p class="command-usage">/stats</p>
 				<h4>Description</h4>
 				<p class="command-description">Advanced Succubus stats for nerds, such as RAM usage and total users.</p>
 		  </div>
@@ -164,7 +145,7 @@
 			  <h3 class="command-header">Server Info</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$serverinfo</p>
+				<p class="command-usage">/serverinfo</p>
 				<h4>Description</h4>
 				<p class="command-description">View various information about the server.</p>
 		  </div>
@@ -173,25 +154,15 @@
 			  <h3 class="command-header">User Info</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$userinfo <span class="arg">[user]</span></p>
+				<p class="command-usage">/userinfo <span class="arg">[user]</span></p>
 				<h4>Description</h4>
 				<p class="command-description">View various information about the input user, or yourself if there is no input.</p>
 		  </div>
-	
-		
-			<div class="command" id="gen-prefix">
-				<h3 class="command-header">Current Prefix</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">$$prefix</p>
-				<h4>Description</h4>
-				<p class="command-description">View the current set bot prefix.</p>				
-			</div>
 			
 		</div>
 	
 		<footer>
-			<center><p class="footer-credit">Website created by Drewcification</p></center>
+			<center><p class="footer-credit">Website design created by Drewcification</p></center>
 		</footer>
 	</body>
 </html>

@@ -2,6 +2,9 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta property="og:title" content="Succubus | Welcome Commands" />
+<meta property="og:url" content= "https://www.succubusbot.xyz/" />
+<meta property="og:image" content="succubus-logo.png" />
 <title>Welcome Commands | Succubus</title>
 <style>body{opacity:0%}</style>
 <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet"> 
@@ -69,9 +72,9 @@
 				<h3 class="command-header">Set Welcome Channel</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$setwelcomechannel <span class="arg">#channel</span></p>
+				<p class="command-usage">/welcome set-channel <span class="arg">channel</span></p>
 				<h4>Description</h4>
-				<p class="command-description">Set the channel to send the welcome message and welcome image to when a user joins the server. Leave the <span class="arg">#channel</span> blank to remove it.</p>
+				<p class="command-description">Set the channel to send the welcome message and welcome image to when a user joins the server.</p>
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Channels</p>
 				<div class="alert alert-info">
@@ -85,7 +88,7 @@
 				<h3 class="command-header">Set Welcome Message</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$setwelcomemessage <span class="arg">message</span></p>
+				<p class="command-usage">/welcome set-message <span class="arg">message</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Set the welcome message. You can add specific text to the welcome message to achieve various effects.</p>
 				<h4>Required Permissions</h4>
@@ -100,11 +103,22 @@
 				</div>	
 			</div>
 			
+			<div class="command" id="welc-formats">
+				<h3 class="command-header">Welcome Formats</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">/welcome formats</p>
+				<h4>Description</h4>
+				<p class="command-description">Provides the above formatting information in-app.</p>
+				<h4>Required Permissions</h4>
+				<p class="command-perms">Manage Channels</p>
+			</div>
+			
 			<div class="command" id="welc-setleavemsg">
 				<h3 class="command-header">Set Leave Message</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$setleavemessage <span class="arg">message</span></p>
+				<p class="command-usage">/welcome set-leave <span class="arg">message</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Set the leave message. You can add specific text to the leave message to achieve various effects.</p>
 				<h4>Required Permissions</h4>
@@ -123,7 +137,7 @@
 				<h3 class="command-header">Set Welcome Image</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$setwelcomeimage <span class="arg">image url</span></p>
+				<p class="command-usage">/welcome set-image <span class="arg">image url</span></p>
 				<h4>Description</h4>
 				<p class="command-description">Set the welcome image. Valid image formats include .jpg, .png, and .gif.</p>
 				<h4>Required Permissions</h4>
@@ -134,7 +148,7 @@
 				<h3 class="command-header">Remove Welcome Message</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$removewelcomemessage</p>
+				<p class="command-usage">/welcome remove-message</p>
 				<h4>Description</h4>
 				<p class="command-description">Removes the welcome message, if one exists.</p>
 				<h4>Required Permissions</h4>
@@ -145,7 +159,7 @@
 				<h3 class="command-header">Remove Leave Message</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$removeleavemessage</p>
+				<p class="command-usage">/welcome remove-leave</p>
 				<h4>Description</h4>
 				<p class="command-description">Removes the leave message, if one exists.</p>
 				<h4>Required Permissions</h4>
@@ -156,7 +170,7 @@
 				<h3 class="command-header">Remove Welcome Image</h3>
 				<hr class="category-header-hr"/>
 				<h4>Usage</h4>
-				<p class="command-usage">$$removewelcomeimage</p>
+				<p class="command-usage">/welcome remove-image</p>
 				<h4>Description</h4>
 				<p class="command-description">Removes the welcome image, if one exists.</p>
 				<h4>Required Permissions</h4>
@@ -167,7 +181,7 @@
 		</div>
 	
 		<footer>
-			<center><p class="footer-credit">Website created by Drewcification</p></center>
+			<center><p class="footer-credit">Website design created by Drewcification</p></center>
 		</footer>
 	</body>
 </html>
