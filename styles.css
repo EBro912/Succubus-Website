@@ -3,11 +3,17 @@
 	font-family: 'Sulphur Point', sans-serif;
 }
 
-.bg-dark{
-	background:black;
+.bg-black{
+	background-color: #07060b !important;
 }
+
+.bg-homepage{
+	background-color: rgba(235,39,84,.5) !important;
+}
+
 .nav-logo{
 	width: 50px;
+	border-radius: 50%;
 }
 .alert{
 	border-radius: 20px;
@@ -34,36 +40,43 @@ body{
 }
 .sb-categories{
 }
+
+
 .sb-button{
+	background-color: #20202063;
 	min-width:120px;
-	display:flex;
-	background:none;
+	display: block;
+	text-align: center;
 	padding:10px;
 	margin:10px;
 	border-radius:50px;
+	outline-color: transparent;
+	outline-width: 2px;
+	outline-style: solid;
+	outline-offset: 3px;
 	color:white;
-	transition: background-color .2s, color .2s, padding-left .2s;
+	transition: background-color .2s, color .2s, outline-offset .4s, outline-color .4s;
 }
 
 .sb-button:hover{
-	background-color:darkslategray;
 	color:white;
 	text-decoration: none;
-	padding: 10px 6px 10px 14px
+	outline-color: hsla(0,0%,100%,.2);
+	outline-width: 2px;
+	outline-offset: -1px;
 }
 
 .sb-button:focus{
-	padding:10px 0px 10px 20px;
-	background:#00A3FF
+	
 }
 
 .sb-button-active{
-	padding:10px 0px 10px 20px;
-	background:#00A3FF
+	outline-color: hsla(0,0%,100%,.2);
+	outline-width: 2px;
+	outline-offset: -1px;
 }
 
 .sb-button-active:hover{
-	padding:10px 0px 10px 20px;
 }
 
 .main{
@@ -114,7 +127,41 @@ thead{
 	
 }
 
+.navbar{
+	background-color: black;
+}
+
 .footer-credit{
 	color:darkgray;
 	text-align:center;
+}
+
+.home-commandgroup-list{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #090909;
+	border-radius: 20px;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+.home-commandgroup-list .sb-button{
+	background-color: #363636;
+}
+
+.dropdown-menu.show{
+	border-radius: 20px;
+}
+
+.header-logo{
+	margin:auto;
+	display: block;
+	max-width: 250px;
+	width:30vw;
+	border-radius: 50%;
+}
+
+.home-header{
+	background: linear-gradient(0deg, rgba(17,17,17,1) 0%, rgba(57,8,19,.5) 35%, rgba(235,39,84,.5) 100%);
 }
