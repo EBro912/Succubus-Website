@@ -43,7 +43,6 @@
 					<a class="sb-button sb-button-active" href="hololive.html">Hololive</a>
 					<a class="sb-button" href="saucenao.html">SauceNAO</a>
 					<a class="sb-button" href="music.html">Music</a>
-					<a class="sb-button" href="donator.html">Donator</a>
 				</div>
 			 </li>
 			 <li class="nav-item dropdown">
@@ -186,8 +185,68 @@
 			</div>
 			
 			<div class="command" id="hl-personal">
-				<h3 class="command-header">Personal Notifiers</h3>
-				<p class="command-usage">Donators get access to personal Hololive notifiers sent to their Direct Messages. See the <a href="donator.html" target="_blank">Donator</a> page for more information.</p>				
+				<h3 class="command-header">Personal Notifiers</h3>			
+			</div>
+
+			<div class="command" id="hl-me-settings">
+				<h3 class="command-header">Hololive Personal Notification Settings</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">/hl-notifyme settings</p>
+				<h4>Description</h4>
+				<p class="command-description">View your personal settings for the Hololive notifier.</p>				
+			</div>
+			
+			<div class="command" id="hl-me-setup">
+				<h3 class="command-header">Personal Notifier Setup</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">/hl-notifyme setup</p>
+				<h4>Description</h4>
+				<p class="command-description">Setup Hololive notifications in your Direct Messages.</p>			
+			</div>
+			
+			<div class="command" id="hl-me-msg">
+				<h3 class="command-header">Personal Notifier Message</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">/hl-notifyme set-msg <span class="arg">message</span> </p>
+				<h4>Description</h4>
+				<p class="command-description">Opens a prompt to set a custom message that displays when a VTuber goes live.</p>	
+				<div class="alert alert-info">
+					<h5 class="command-note-header">Note</h5>
+					<hr>
+					<p>The text [vtuberName] and [videoTitle] can be used to insert information about the stream into the message.</p>
+					<br />
+					<p>Example: [vtuberName] has gone live! => Usada Pekora has gone live!</p>
+				</div>	
+			</div>
+			
+			<div class="command" id="hl-me-add">
+				<h3 class="command-header">Add To Personal Notifier</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">/hl-notifyme add <span class="arg">VTuber</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Adds the specified <span class="arg">VTuber</span> to your notifier. Notifications will be recieved whenever they go live.</p>						
+			</div>
+			
+			<div class="command" id="hl-me-remove">
+				<h3 class="command-header">Remove From Personal Notifier</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">/hl-notifyme remove <span class="arg">VTuber</span></p>
+				<h4>Description</h4>
+				<p class="command-description">Removes the specified <span class="arg">VTuber</span> from your notifier.</p>							
+			</div>
+			
+			<div class="command" id="hl-me-preview">
+				<h3 class="command-header">Preview Personal Notifier Message</h3>
+				<hr class="category-header-hr"/>
+				<h4>Usage</h4>
+				<p class="command-usage">/hl-notifyme preview</p>
+				<h4>Description</h4>
+				<p class="command-description">Preview the message that gets displayed in your DMs whenever a VTuber goes live.</p>				
 			</div>
 			
 		</div>

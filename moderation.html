@@ -43,7 +43,6 @@
 					<a class="sb-button" href="hololive.html">Hololive</a>
 					<a class="sb-button" href="saucenao.html">SauceNAO</a>
 					<a class="sb-button" href="music.html">Music</a>
-					<a class="sb-button" href="donator.html">Donator</a>
 				</div>
 			 </li>
 			 <li class="nav-item dropdown">
@@ -115,103 +114,7 @@
 				<h4>Required Permissions</h4>
 				<p class="command-perms">Manage Messages</p>
 			</div>
-			
-			<div class="command" id="mod-setacceptrole">
-				<h3 class="command-header">Set Accept Role</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">/accept-settings-setrole <span class="arg">role</span></p>
-				<h4>Description</h4>
-				<p class="command-description">Set the <span class="arg">role</span> that is automatically given to users when they join. They will have to /accept the rules in order to remove it.</p>
-				<h4>Required Permissions</h4>
-				<p class="command-perms">Manage Roles</p>
-				<div class="alert alert-info">
-					<h5 class="command-note-header">Note</h5>
-					<hr>
-					<p>Usually, you will explain how to accept the rules in your designated rules channel. (Ex. "Type /accept to gain access to the rest of the channels!") The user will then type the command in your welcome channel to remove the role. This command assumes you have set up your channel permissions correctly.</p>
-				</div>	
-			</div>
-			
-			<div class="command" id="mod-setacceptmode">
-				<h3 class="command-header">Set Accept Mode</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">/accept-settings-setmode <span class="arg">remove/add</span></p>
-				<h4>Description</h4>
-				<p class="command-description">Set the mode of the accept, whether it should <span class="arg">add</span> or <span class="arg">remove</span> the accept role when a user accepts the rules.</p>
-				<h4>Required Permissions</h4>
-				<p class="command-perms">Manage Roles</p>
-			</div>
-			
-			<div class="command" id="mod-delacceptrole">
-				<h3 class="command-header">Remove Accept Role</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">/accept-settings-delrole</p>
-				<h4>Description</h4>
-				<p class="command-description">Remove the set role from the accept module.</p>
-				<h4>Required Permissions</h4>
-				<p class="command-perms">Manage Roles</p>
-			</div>
-			
-			<div class="command" id="mod-autobansettings">
-				<h3 class="command-header">View AutoBan Settings</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">/autoban settings</p>
-				<h4>Description</h4>
-				<p class="command-description">View the AutoBan system settings for the server.</p>
-				<h4>Required Permissions</h4>
-				<p class="command-perms">Manage Roles</p>
-				<div class="alert alert-danger">
-					<h5 class="command-note-header">Warning</h5>
-					<p>AutoBan conditions with Notify set to true will NOT autoban matching users, and will instead send a notification to the set notification channel, as seen below.</p>
-				</div>
-			</div>
-			
-			<div class="command" id="mod-setnotifychannel">
-				<h3 class="command-header">Set AutoBan Notification Channel</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">/autoban setnotify <span class="arg">channel</span> <span class="arg">[role]</span></p>
-				<h4>Description</h4>
-				<p class="command-description">Sets the channel where AutoBan conditions marked as notify will be sent. If a role is set, the role will be mentioned as well.</p>
-				<h4>Required Permissions</h4>
-				<p class="command-perms">Administrator</p>
-			</div>
-			
-			<div class="command" id="mod-addcondition">
-				<h3 class="command-header">Add AutoBan Condition</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">/autoban add <span class="arg">condition</span> <span class="arg">match full name</span> <span class="arg">match case</span> <span class="arg">notify</span></p>
-				<h4>Description</h4>
-				<p class="command-description">Adds a new condition to the AutoBan system. The 3 remaining parameters are other settings that should be provided as true or false.</p>
-				<h4>Required Permissions</h4>
-				<p class="command-perms">Administrator</p>
-			</div>
-			
-			<div class="command" id="mod-removecondition">
-				<h3 class="command-header">Remove AutoBan Condition</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">/autoban remove <span class="arg">condition</span></p>
-				<h4>Description</h4>
-				<p class="command-description">Removes a condition from the AutoBan system.</p>
-				<h4>Required Permissions</h4>
-				<p class="command-perms">Administrator</p>
-			</div>
-			
-			<div class="command" id="mod-removecondition">
-				<h3 class="command-header">Toggle Condition Settings</h3>
-				<hr class="category-header-hr"/>
-				<h4>Usage</h4>
-				<p class="command-usage">/autoban toggle <span class="arg">condition</span> <span class="arg">full/case/notify</span></p>
-				<h4>Description</h4>
-				<p class="command-description">Toggles a condition's individual settings between true and false.</p>
-				<h4>Required Permissions</h4>
-				<p class="command-perms">Administrator</p>
-			</div>
+		
 			
 		</div>
 	
